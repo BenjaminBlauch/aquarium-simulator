@@ -1,0 +1,49 @@
+<!--Written by Benjamin Blauch-->
+<html>
+<head>
+	<!--page title and icon-->
+	<title>Adaptive Aquarium</title>
+	<link rel="icon" href="images/Images_Icon.png">
+
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="Width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!--rather than link a css file-->
+	<style>
+		body {
+			margin: auto; /* could be an issue later with additional images? */
+		}
+		
+		#aquarium {
+			background-color: rgb(44, 47, 221);
+		}
+		/* keeps images from showing up when they shouldn't */
+		img {
+			display: none;
+		}
+		
+		/* currently the frame color */
+		html {
+			background-color: rgb(0, 0, 0);
+		}
+
+	</style>
+</head>
+<body>
+	<!--places images into the file with unique ids-->
+	<img id="img_background" src="images/Images_Background.png">
+	<img id="img_foreground" src="images/Images_Foreground.png">
+	<img id="img_fish_Tang" src="images/Fish_Tang.png">
+	<img id="img_fish_Surgeonfish" src="images/Fish_Surgeonfish.png">
+	<img id="img_fish_Triggerfish" src="images/Fish_Triggerfish.png">
+	<img id="img_fish_Clownfish" src="images/Fish_Clownfish.png">
+	<img id="img_fish_Cuttlefish" src="images/Fish_Cuttlefish.png">
+	<img id="img_fish_Pufferfish" src="images/Fish_Pufferfish.png">
+	<img id="img_fish_Shark" src="images/Fish_Shark.png">
+	<!--The area in which the game will be drawn-->
+	<canvas id="aquarium" width="1960" height="1080"></canvas>
+	
+	<!--link to the js stylesheet-->
+	<script src="src/index.js"></script>
+</body>
+</html>
